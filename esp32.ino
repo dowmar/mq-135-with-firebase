@@ -13,8 +13,8 @@ int lcdRows = 2;
 String status_co2 = " ";
 String status_co = " ";
 
-#define FIREBASE_HOST "https://esp32-kudara-default-rtdb.asia-southeast1.firebasedatabase.app/"
-#define FIREBASE_AUTH "2bCgzMvu6isLyNzTtDjhxQOgbN1XvG6gpvhopXzY"
+#define FIREBASE_HOST ""
+#define FIREBASE_AUTH ""
 
 /************************Hardware Related Macros************************************/
 #define         Board                   ("ESP-32") // Wemos ESP-32 or other board, whatever have ESP32 core.
@@ -27,12 +27,7 @@ String status_co = " ";
 /*****************************Globals***********************************************/
 MQUnifiedsensor MQ135(Board, Voltage_Resolution, ADC_Bit_Resolution, Pin, Type);
 /*****************************Globals***********************************************/
-//const char* ssid     = "Domar9029";
-//const char* password = "b5bwpsxna";
 
-// Hape
-//const char* ssid     = "02abc";
-//const char* password = "helena002";
 FirebaseData firebaseData;
 LiquidCrystal_I2C lcd(0x27, lcdColumns, lcdRows);  
 
